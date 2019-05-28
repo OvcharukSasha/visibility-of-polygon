@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>visibility polygon</title>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  
+  
+</head>
+
+<body>
+
+   <body onload="init();" oncontextmenu="return false">
+      <div align="center" oncontextmenu="LastPoint()">
+         <canvas id="canvas" width="1400" height="650" ></canvas>
+      </div>
+     
+      <div class="context" align="right" >
+  	
+  		<label class="space" for="numbers">
+  	  Кількість сторін простого многокутника: 
+        </label>
+
+  		<input type="number" id="numbers" name="numberss"
+       min="3"  max="100000">
+       <button type="submit" class="button button1" onclick="makePolygon()">OK</button>
+       
+        </div>
+ 
+      <span align="left"  id="coord"></span>
+  
+      <span align="center" id="inside"></span>
+     <script src='https://codepen.io/frankcastro/pen/ByWwzL.js'></script>
+
+  
+
+       <script  src="js/index.js"></script>
+    </body>
+
+
+
+
+
+
+ </body>
+</html>
